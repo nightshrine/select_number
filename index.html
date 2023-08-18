@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>select_number</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="title">
+                <h1>select_number</h1>
+            </div>
+            <div class="container">
+                <div class="option">
+                    <h2>オプション</h2>
+                    <form id="option-form">
+                        <label>
+                            <p class="input-title">数字の範囲：</p>
+                            <input type="number" id="min_num" value="1" min="1" max="99" required>
+                            <p>~</p>
+                            <input type="number" id="max_num" value="15" min="1" max="99" required>
+                        </label>
+                        <label>
+                            <p class="input-title">参加人数：</p>
+                            <input type="number" id="num_people" value="4" min="1" max="6" required>
+                        </label>
+                        <label>
+                            <p class="input-title">割り当てる個数：</p>
+                            <input type="number" id="num_select" value="3" min="1" max="4" required>
+                        </label>
+                        <button type="submit" id="btn-option">決定</button>
+                    </form>
+                </div>
+                <div class="result">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
